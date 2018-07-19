@@ -9,19 +9,15 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-
-    if (!message.content.startsWith(prefix)) return;
-    if (message.author.id === client.user.id) return;
-    if (message.author.bot) return;
-
-    var command = message.content.split(" ")[0];
-    command = command.slice(prefix.length).toLowerCase();
-
-    var args = message.content.split(" ").slice(1);
-    args[0] = args[0].toLowerCase();
-
+    if (message.author.bot || message.content.startsWith(prefix)) return;
+    const args = message.content.slice(prefix.length).split(" ")
+    const command = args.shift().toLowercase();
+    
     if (command === 'ping') {
-        message.channel.sendMessage('Pong!');
+        const then = Date.now();
+        message.channel.send('pinging...').then(>> => {
+        >>.edit('Pong! It took ${Date.now - then}ms!\nDiscord Heartbeart:${bot.ping}');
+        });
     }
 });
 
