@@ -20,30 +20,9 @@ client.on('message', message => {
     var args = message.content.split(" ").slice(1);
     args[0] = args[0].toLowerCase();
 
-    if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
-
-    if (message.content.startsWith(prefix + 'ping')) {
-        message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
-    }
-      // Check arg.
-        if (args[0] === 'stop') {
-            mode = 'stop';
-        } else 
-        if (args[0] === 'start') {
-            mode = 'start';
-        }
-     let currentTime;
-        let run = setInterval(function() {
-            currentTime = new Date().getSeconds(); // CHANGE
-            if (currentTime % 10 === 0) {
-                getProgram();
-            }
-            if (mode === 'stop') {
-                clearInterval(run);
-            }
-        }, 1000);
-    }
+    if (command === 'ping') {
+        message.channel.sendMessage'Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
+    } else
 });
 
 // THIS  MUST  BE  THIS  WAY
