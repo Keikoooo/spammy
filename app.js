@@ -27,7 +27,7 @@ client.on('message', (message) => {
     title: "Information for Keiko",
     description: "There are no messages yet."
     }});
-          
+    break;      
     }
 });
 
