@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const request = require('request');
 const client = new Discord.Client();
-const prefix = '>>';
+let prefix = '>>';
 
 client.on('ready', () => {
     console.log(`I am ready!`);
@@ -11,15 +11,17 @@ client.on('ready', () => {
 client.on('message', (message) => {
   // Exit and stop if the prefix is not there or if user is a bot
   if (!message.content.startsWith(prefix) || message.author.bot) return;;
-  if (message.content.startsWith(prefix + "ping")) {
-    let start = Date.now(); 
-    bot.createMessage(msg.channel.id, 'Pong! ').then(msg => { 
-        let diff = (Date.now() - start); 
-        return msg.edit(`Pong! \`${diff}ms\``); })
-  } else
-  if (message.content.startsWith(prefix + "pong")) {
-    message.channel.send("ping!");
-  }
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+  switch (command) {
+  case "ping" :
+    message.channel.send('Pong!');
+    break;
+  case "blah" :
+    message.channel.send('Meh.');
+    break;
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
