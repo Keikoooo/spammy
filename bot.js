@@ -20,10 +20,9 @@ client.on('message', message => {
     var args = message.content.split(" ").slice(1);
     args[0] = args[0].toLowerCase();
 
-    if (command === 'ping') {
-        message.channel.sendMessage(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
-    } else  
-});
+    if (message.content.startsWith(prefix + 'ping')) {
+        message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
+    }
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
