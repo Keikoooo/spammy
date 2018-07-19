@@ -20,7 +20,7 @@ client.on('message', message => {
     var args = message.content.split(" ").slice(1);
     args[0] = args[0].toLowerCase();
 
-    if (command === 'ping') {
+    if (command === ' ping') {
     message.channel.sendMessage("Pong!");
 
     // const m = await message.channel.send("Ping?");
