@@ -23,8 +23,9 @@ client.on('message', (message) => {
     break;
   case "keiko" :
     message.channel.send({embed: {
-  color: 12695507,
-  description: "There are no messages yet."
+    color: 12695507,
+    title: "Information for Keiko",
+    description: "There are no messages yet."
     }});
           
     }
