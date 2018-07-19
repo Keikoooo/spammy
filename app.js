@@ -10,10 +10,12 @@ client.on('ready', () => {
 
 client.on('message', (message) => {
   // Exit and stop if the prefix is not there or if user is a bot
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+  if (!message.content.startsWith(prefix) || message.author.bot) return;;
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("Pong! \`${client.pings[0]}ms\`");
+    let start = Date.now(); 
+    bot.createMessage(msg.channel.id, 'Pong! ').then(msg => { 
+        let diff = (Date.now() - start); 
+        return msg.edit(`Pong! \`${diff}ms\``); })
   } else
   if (message.content.startsWith(prefix + "pong")) {
     message.channel.send("ping!");
