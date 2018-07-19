@@ -23,6 +23,7 @@ client.on('message', message => {
     if (message.content.startsWith(prefix + 'ping')) {
         message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
     }
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
