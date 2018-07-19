@@ -5,7 +5,7 @@ const botconfig = require('./botconfig.json');
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setGame('with Keiko!')
+    client.user.setGame('with Keiko!')
 });
 
 client.on('message', message => {
