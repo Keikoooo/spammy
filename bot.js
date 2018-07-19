@@ -21,8 +21,8 @@ client.on('message', message => {
     args[0] = args[0].toLowerCase();
 
     if (command === 'ping') {
-        message.channel.sendMessage'Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
-    } else }
+        message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
+    } else 
 });
 
 // THIS  MUST  BE  THIS  WAY
