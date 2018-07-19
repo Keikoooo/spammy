@@ -22,7 +22,7 @@ client.on('message', message => {
 
     if (command === 'ping') {
         message.channel.sendMessage('Pong!');
-    } else 
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
