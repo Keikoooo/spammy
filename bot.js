@@ -5,7 +5,7 @@ const prefix = 'fel ';
 
 client.on('ready', () => {
     console.log(`I am ready!`);
-    client.user.setActivity(`with Keiko!`);
+    client.user.setPresence({ game: { name: `with Keiko!`, type: 0 } });
 });
 
 client.on('message', async message => {
