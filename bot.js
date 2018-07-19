@@ -20,6 +20,9 @@ client.on('message', message => {
     var args = message.content.split(" ").slice(1);
     args[0] = args[0].toLowerCase();
 
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
+
     if (message.content.startsWith(prefix + 'ping')) {
         message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
     }
