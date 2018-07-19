@@ -13,7 +13,7 @@ client.on('message', (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("Pong! The ping is new Date().getTime() - message.createdTimestamp ms!");
+    message.channel.send("Pong! \`${client.pings[0]}ms\`");
   } else
   if (message.content.startsWith(prefix + "pong")) {
     message.channel.send("ping!");
