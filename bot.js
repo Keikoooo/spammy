@@ -22,7 +22,7 @@ client.on('message', message => {
 
     if (command === 'ping') {
         message.channel.sendMessage'Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
-    } else
+    } else }
 });
 
 // THIS  MUST  BE  THIS  WAY
