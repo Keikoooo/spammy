@@ -21,6 +21,12 @@ client.on('message', (message) => {
   case "blah" :
     message.channel.send('Meh.');
     break;
+  case "keiko" :
+    message.channel.send({embed: {
+  color: 12695507,
+  description: "There are no messages yet."
+    }});
+          
     }
 });
 
