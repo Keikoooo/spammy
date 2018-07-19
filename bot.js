@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const request = require('request');
 const client = new Discord.Client();
-const prefix = 'fel';
+const prefix = '>>';
 
 client.on('ready', () => {
     console.log(`I am ready!`);
@@ -20,7 +20,7 @@ client.on('message', message => {
     var args = message.content.split(" ").slice(1);
     args[0] = args[0].toLowerCase();
 
-    if (command === ' ping') {
+    if (command === 'ping') {
     message.channel.sendMessage("Pong!");
 
     // const m = await message.channel.send("Ping?");
