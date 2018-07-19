@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const request = require('request');
 const client = new Discord.Client();
-const prefix = '~';
+const prefix = '=';
 
 client.on('ready', () => {
     console.log(`I am ready!`);
