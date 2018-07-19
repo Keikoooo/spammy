@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({disableEveryone: true});
 
 client.on('ready', async () => {
-    console.log('${client.user.username} is online!');
+    console.log(`${client.user.username} is online!`);
     client.user.setGame("with Keiko!");
 });
 
