@@ -8,20 +8,22 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: `with Keiko!`, type: 0 } });
 });
 
-client.on('message', async message => {
-    if(message.author.bot) return;
-    if(message.content.indexOf(config.prefix) !== 0) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-    const command = args.shift().toLowerCase();
-    
-    if(command === "ping") {
+client.on('message', message => {
+
+    if (!message.content.startsWith(prefix)) return;
+    if (message.author.id === client.user.id) return;
+    if (message.author.bot) return;
+
+    var command = message.content.split(" ")[0];
+    command = command.slice(prefix.length).toLowerCase();
+
+    var args = message.content.split(" ").slice(1);
+    args[0] = args[0].toLowerCase();
+
+    if (command === 'ping') {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
-    
-    if (message.content === "pong") {
-    	message.reply("ping");
-  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
