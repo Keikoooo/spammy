@@ -1,3 +1,3 @@
 exports.run = (client, message, args) => {
-    message.channel.send(`Please do `fel ping.``).catch(console.error);
+    message.channel.send(`Please do `fel ping` to check ping.`).catch(console.error);
 }
