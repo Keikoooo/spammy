@@ -8,4 +8,5 @@ exports.run = (client, message, args) => {
     title: "Roster for ${rosters}",
     description: "./rosters/${rosters}.js"
     }});
+  }
 }
