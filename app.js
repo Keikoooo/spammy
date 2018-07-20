@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const request = require('request');
 const client = new Discord.Client();
+const fs = require("fs")
+
 let prefix = 'fel ';
 
 client.on('ready', () => {
