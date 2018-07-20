@@ -26,4 +26,5 @@ exports.run = (client, message, args) => {
     title: "Roster for MCTHICC",
     description: "Rank 10\nsuperbadchad\neDying\nAbqve\nBlack8787\n"
     }});
+  }
 }
