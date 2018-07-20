@@ -53,6 +53,7 @@ client.on('message', (message) => {
   ).catch(error => console.log(error.stack));
   };
   export.reload = reload;  
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
