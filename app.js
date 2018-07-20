@@ -3,7 +3,7 @@ const request = require('request');
 const client = new Discord.Client();
 const fs = require("fs")
 
-let prefix = 'fel ';
+const config = require("./config.json");
 
 client.on('ready', () => {
     console.log(`I am ready!`);
@@ -12,8 +12,8 @@ client.on('ready', () => {
 
 client.on('message', (message) => {
   // Exit and stop if the prefix is not there or if user is a bot
-  if (!message.content.startsWith(prefix) || message.author.bot) return;;
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  if (!message.content.startsWith(config.prefix) || message.author.bot) return;;
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   switch (command) {
