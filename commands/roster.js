@@ -1,12 +1,12 @@
 exports.run = (client, message, args) => {
-    if (args === 'artemis') {
+    if (args = 'artemis') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
     description: "Rank 5\n\nmililu\nSnakeHenry"
     }});
   } else
-    if (args === 'echo') {
+    if (args = 'echo') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Echo",
