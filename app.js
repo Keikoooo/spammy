@@ -30,7 +30,6 @@ client.on('message', (message) => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-    
   // The list of if/else is replaced with those simple 2 lines:
   try {
     let commandFile = require(`./commands/${command}.js`);
@@ -38,6 +37,22 @@ client.on('message', (message) => {
   } catch (err) {
     console.error(err);
   }
+    
+  // Reload command
+  var reload = (message, cmd) => {
+    delete require.cache[require.resolve('./commands/' + cmd)];
+    try {
+        let cmdFile = require('./commands/' + cmd);
+    } catch (err) {
+        message.edit(`Problem loading ${cmd}: ${err}`).then(
+            response => response.delete(1000).catch(error => console.log(error.stack)
+    }.catch(error => console.log(error.stack));
+  }
+  message.edit(`${cmd} reload was a success!`).then(
+      response => response.delete(1000).catch(error => console.log(error.stack))
+  ).catch(error => console.log(error.stack));
+  };
+  export.reload = reload;  
 });
 
 // THIS  MUST  BE  THIS  WAY
