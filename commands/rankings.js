@@ -2,6 +2,6 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Rankings",
-    description: "1. Echo\n 2. Calamity 3. IDK\n 4. Velocity\n 4. Velocity\n 5. Artemis\n 6. OP\n 7. Aero\n 8. Kystic\n 9. Ascent\n 10. McThicc\n 11. BloodQuill\n 12. Plutonians"
+    description: "1. Echo\n2. Calamity\n3. IDK\n4. Velocity\n5. Artemis\n6. OP\n7. Aero\n8. Kystic\n9. Ascent\n10. McThicc\n11. BloodQuill\n 12.Plutonians"
     }});
 }
