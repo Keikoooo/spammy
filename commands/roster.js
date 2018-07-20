@@ -12,5 +12,5 @@ exports.run = (client, message, args) => {
     title: "Roster for Echo",
     description: "Rank 1\n\ycnan\naayanna"
     }});
-  } else
+  }
 }
