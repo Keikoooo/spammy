@@ -4,6 +4,8 @@ const client = new Discord.Client();
 const fs = require("fs")
 
 const config = require("./config.json");
+const sql = require("sqlite");
+sql.open("./score.sqlite");
 
 client.on('ready', () => {
     console.log(`I am ready!`);
@@ -24,6 +26,7 @@ fs.readdir("./events/", (err, files) => {
 client.on('message', (message) => {
   // Exit and stop if the prefix is not there or if user is a bot
   if (message.author.bot) return;
+  if (message.channel.type === "dm") return; // Ignore DM channels.
   if(message.content.indexOf(config.prefix) !== 0) return;
     
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
