@@ -1,1 +1,16 @@
-
+{
+  var rosters = [
+  "Echo",
+  "Calamity",
+  "IDK"
+  "Velocity",
+  "Artemis",
+  "OP",
+  "Aero",
+  "Kystic",
+  "Ascent",
+  "McThicc",
+  "BloodQuill",
+  "Plutonians",
+  ]
+}
