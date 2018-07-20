@@ -38,22 +38,6 @@ client.on('message', (message) => {
     console.error(err);
   }
     
-  // Reload command
-  var reload = (message, cmd) => {
-    delete require.cache[require.resolve('./commands/' + cmd)];
-    try {
-        let cmdFile = require('./commands/' + cmd);
-    } catch (err) {
-        message.edit(`Problem loading ${cmd}: ${err}`).then(
-            response => response.delete(1000).catch(error => console.log(error.stack)
-    }.catch(error => console.log(error.stack));
-  }
-  message.edit(`${cmd} reload was a success!`).then(
-      response => response.delete(1000).catch(error => console.log(error.stack))
-  ).catch(error => console.log(error.stack));
-  };
-  export.reload = reload;  
-    
 });
 
 // THIS  MUST  BE  THIS  WAY
