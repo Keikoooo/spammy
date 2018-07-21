@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-    let [add, remove, player, team] = args;
+    let [add, remove, team] = args;
     
     if (args == 'aero') {
     let [ohjustame, SilverSky009] = player;
