@@ -22,7 +22,7 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.on('message', (message) => {
-  const prefixes = ['fel ', 'Fel ', 'FEL '];
+  const prefixes = ['fel ', 'Fel ', 'FEL ', 'fEl ', 'feL ', 'fEL ', 'FeL ', 'fEL ', 'FEl '];
   let prefix = false;
   for(const thisPrefix of prefixes) {
   if(message.content.startsWith(thisPrefix)) prefix = thisPrefix;
