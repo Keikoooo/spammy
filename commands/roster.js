@@ -62,7 +62,7 @@ exports.run = (client, message, args) => {
     description: "Rank 10\n\nsuperbadchad\:crown:\neDying\:crown:\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic\nMickeree_"
     }});
   } else
-    if (args == 'Nightmare') {
+    if (args == 'nightmare') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Nightmare",
