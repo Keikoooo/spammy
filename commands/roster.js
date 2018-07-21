@@ -1,4 +1,6 @@
 exports.run = (client, message, args) => {
+    let [add, remove, player, team] = args;
+    
     if (args == 'aero') {
     message.channel.send({embed: {
     color: 12887295,
