@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
-    if (args == 'aero') {
+    if (args[3]== 'aero') {
     let [ohjustame\:crown:, SilverSky009\:crown:] = player;
     message.channel.send({embed: {
     color: 12887295,
@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     description: "Rank 7\n\n${player[0]}\n${player[1]}"
     }});
   } else
-    if (args == 'artemis') {
+    if (args[3]== 'artemis') {
     let [mililu\:crown:, SnakeHenry\:crown:\:scales:️] = player;
     message.channel.send({embed: {
     color: 12887295,
