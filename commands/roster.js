@@ -10,21 +10,35 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
-    description: "Rank 5\n\nmililu\nSnakeHenry\nskkketchy"
+    description: "Rank 5\n\nmililu\nSnakeHenry\nEchanz\nFarzine\nguccitaee\nJqshZ3\nTELETUBBYJUSTIN\nkwehwy\nskkketchy\ndereknishimoto\npluv\nReachMafia\nskei\nSwipy\n_4H\n_Cath\n_Livyy_"
+    }});
+  } else
+    if (args == 'bloodquill') {
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for BloodQuill",
+    description: "Rank 11\n\nAnaworfis\nLuzifeer\njeroNV\nfindollo\nkikina01cz\nlunular\nOdran_\nPolygonWater\nXXXTentac1ion"
+    }});
+  } else
+    if (args == 'calamity') {
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for Calamity",
+    description: "Rank 2\n\nCrownedVictor\nWackaroni\nAlpha_Pup10\nButterxkiller\nCaait\nJessaye\nNoobAcc\nWhatTheNut\nxGanny\nXV1etnam\nZephyrrStorm\n_Mentals\n__Double"
     }});
   } else
     if (args == 'echo') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Echo",
-    description: "Rank 1\n\ycnan\naayanna"
+    description: "Rank 1\n\naayanna\nycnan\nAbeDaBae\napiculture\nArylia\nElami\nevd\nhri\ninsertsoul\nLoonii\nqGods\nRqvine\nRzco\nultrako\nxShqde_\ngraacie"
     }});
   } else
     if (args == 'mcthicc') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for MCTHICC",
-    description: "Rank 10\nsuperbadchad\neDying\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic"
+    description: "Rank 10\n\nsuperbadchad\neDying\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic"
     }});
   }
 }
