@@ -3,18 +3,20 @@ exports.run = (client, message, args) => {
     
     if (args == 'aero') {
     let [ohjustame, SilverSky009] = player;
-    message.channel.send({embed: {
-    color: 12887295,
-    title: "Roster for Aero",
-    description: "Rank 7\n\n${player[0]}\n${player[1]}"
+    const embed = new Discord.RichEmbed()
+    .setTitle("Roster for Aero")
+    .setColor(12887295)
+    .setDescription("Rank 7\n\n${player[0]}\n${player[1]}")
+    message.channel.send({embed});
     }});
   } else
     if (args == 'artemis') {
     let [mililu, SnakeHenry] = player;
-    message.channel.send({embed: {
-    color: 12887295,
-    title: "Roster for Artemis",
-    description: "Rank 5\n\n${player[0]}\n${player[1]}"
-    }});
+    const embed = new Discord.RichEmbed()
+    .setTitle("Roster for Artemis")
+    .setColor(12887295)
+    .setDescription("Rank 5\n\n${player[0]}\n${player[1]}")
+    message.channel.send({embed});
+    }});    
   } 
 }
