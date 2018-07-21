@@ -37,8 +37,22 @@ exports.run = (client, message, args) => {
     if (args == 'FBB') {
     message.channel.send({embed: {
     color: 12887295,
-    title: "Roster for BloodQuill",
+    title: "Roster for The Fresh Beat Band (FBB)",
     description: "Rank 9\n\ncutecarry\nReixnaaaa\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\nSmokeArrow\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
+    }});
+  } else
+    if (args == 'idk') {
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for IDK",
+    description: "Rank 3\n\nDEDYellowSnowTri\nGeagleDED\nImmortalSun\nSnowflaketimee\nVezical\nGreenio\nChanceberry\nKaiilin\nHero_Cerebrum\nHodinii\nHodarit\niMoony_DED"
+    }});
+  } else
+    if (args == 'kystic') {
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for Kystic",
+    description: "Rank 8\n\nandrewew\nBlondeAF\nArtxie\nDes1\nHils\nlvna\nRitorugaru\nSaltyAP\nStxry\nYungEmi\n_Negqtive\nmyhku\nwallflower23\neGeography"
     }});
   } else
     if (args == 'mcthicc') {
