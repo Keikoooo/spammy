@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for MCTHICC",
-    description: "Rank 10\nsuperbadchad\neDying\nAbqve\nBlack8787\n"
+    description: "Rank 10\nsuperbadchad\neDying\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic"
     }});
   }
 }
