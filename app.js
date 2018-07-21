@@ -5,6 +5,10 @@ const fs = require("fs")
 
 const config = require("./config.json");
 
+// TWC Rosters
+var aeroroster = ["ohjustame", "SilverSky009"];
+var artemisroster = ["mililu", "SnakeHenry"];
+
 client.on('ready', () => {
     console.log(`I am ready!`);
     client.user.setPresence({ game: { name: `with Keiko!`, type: 0 } });
