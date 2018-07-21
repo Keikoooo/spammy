@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
-  let rosters = require("roster.js");
+  let rosters = require("./commands/roster.js");
   
-  if (args == ${args}) {
+  if (args == ${roster.args}) {
     rosters.run(client, message, args);
   } else
     message.channel.send(`Please insert a team.`);  
