@@ -1,6 +1,11 @@
 exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
+    
+   // TWC Rosters
+    const aeroroster = ["ohjustame", "SilverSky009"];
+    const artemisroster = ["mililu", "SnakeHenry"];
+    
     if (args == 'aero') {
     message.channel.send({embed: {
     color: 12887295,
