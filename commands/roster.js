@@ -33,6 +33,13 @@ exports.run = (client, message, args) => {
     title: "Roster for Echo",
     description: "Rank 1\n\naayanna\nycnan\nAbeDaBae\napiculture\nArylia\nElami\nevd\nhri\ninsertsoul\nLoonii\nqGods\nRqvine\nRzco\nultrako\nxShqde_\ngraacie"
     }});
+  } else   
+    if (args == 'FBB') {
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for BloodQuill",
+    description: "Rank 9\n\ncutecarry\nReixnaaaa\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\nSmokeArrow\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
+    }});
   } else
     if (args == 'mcthicc') {
     message.channel.send({embed: {
