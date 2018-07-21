@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for The Fresh Beat Band (FBB)",
-    description: "Rank 9\n\ncutecarry\:crown:\:eight_spoked_asterisk:️\nReixnaaaa\:crown:\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\nSmokeArrow\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
+    description: "Rank 9\n\ncutecarry\:crown:\:eight_spoked_asterisk:️\nReixnaaaa\:crown:\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
     }});
   } else
     if (args == 'idk') {
