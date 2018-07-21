@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     }});
   } else
     if (args == 'artemis') {
-    let [mililu, SnakeHenry] = args[2];
+    let [mililu, SnakeHenry] = player;
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
