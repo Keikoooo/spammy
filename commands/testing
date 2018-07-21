@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
     if (args == 'aero') {
-    let [ohjustame\:crown:, SilverSky009\:crown:] = players;
+    let [ohjustame, SilverSky009] = player;
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
@@ -10,11 +10,11 @@ exports.run = (client, message, args) => {
     }});
   } else
     if (args == 'artemis') {
-    let [mililu\:crown:, SnakeHenry\:crown:\:scales:️] = players;
+    let [mililu, SnakeHenry] = player;
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
-    description: "Rank 5\n\n${players[0]}\n${players[1]}"
+    description: "Rank 5\n\n${player[0]}\n${player[1]}"
     }});
   } 
 }
