@@ -2,11 +2,8 @@ exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     var player = [0, 1];
     
-   // TWC Rosters
-    const ["ohjustame", "SilverSky009"] = aeroroster;
-    const ["mililu", "SnakeHenry"] = artemisroster;
-    
     if (args == 'aero') {
+    const ["ohjustame", "SilverSky009"] = aeroroster;
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
@@ -14,6 +11,7 @@ exports.run = (client, message, args) => {
     }});
   } else
     if (args == 'artemis') {
+    const ["mililu", "SnakeHenry"] = artemisroster;
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
