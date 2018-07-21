@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
         .setTitle("Roster for Aero")
         .setColor(12887295)
         .setDescription("Rank 7\n\n${player[0]}\n${player[1]}")
-  message.channel.send({embed});
+    message.channel.send({embed});
   } else
     if (args == 'artemis') {
     let [mililu, SnakeHenry] = player;
@@ -16,6 +16,6 @@ exports.run = (client, message, args) => {
        .setTitle("Roster for Artemis")
        .setColor(12887295)
        .setDescription("Rank 5\n\n${player[0]}\n${player[1]}")
-  message.channel.send({embed});
+    message.channel.send({embed});
   }
 }
