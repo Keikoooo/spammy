@@ -34,7 +34,7 @@ exports.run = (client, message, args) => {
     description: "Rank 1\n\naayanna\:crown:\nycnan\:crown:\nAbeDaBae\napiculture\nArylia\nElami\nevd\nhri\ninsertsoul\nLoonii\nqGods\nRqvine\nRzco\nultrako\nxShqde_\ngraacie"
     }});
   } else   
-    if (args == 'FBB') {
+    if (args == 'fbb') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for The Fresh Beat Band (FBB)",
