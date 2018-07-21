@@ -3,8 +3,8 @@ exports.run = (client, message, args) => {
     var player = [0, 1];
     
    // TWC Rosters
-    let aeroroster = ["ohjustame", "SilverSky009"];
-    let artemisroster = ["mililu", "SnakeHenry"];
+    const ["ohjustame", "SilverSky009"] = aeroroster;
+    const ["mililu", "SnakeHenry"] = artemisroster;
     
     if (args == 'aero') {
     message.channel.send({embed: {
