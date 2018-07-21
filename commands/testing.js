@@ -19,5 +19,8 @@ exports.run = (client, message, args) => {
     title: "Roster for Artemis",
     description: "Rank 5\n\n${artemisroster}\n${artemisroster}"
     }});
-  }
+  } else
+    if (args == 'bloodquill') {
+    message.channel.send("Rank 5\n\n${artemisroster}\n${artemisroster}");
+  } 
 }
