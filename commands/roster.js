@@ -52,7 +52,7 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Kystic",
-    description: "Rank 8\n\nandrewew\:crown:\nArtxie\nDes1\nHils\nlvna\nRitorugaru\nStxry\nYungEmi\n_Negqtive\nmyhku\nwallflower23"
+    description: "Rank 8\n\nandrewew\:crown:\nDes1\:crown:\nArtxie\nHils\nlvna\nRitorugaru\nStxry\nYungEmi\n_Negqtive\nmyhku\nwallflower23"
     }});
   } else
     if (args == 'mcthicc') {
