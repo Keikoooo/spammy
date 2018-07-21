@@ -3,14 +3,14 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
-    description: "Rank 7\n\nohjustame\:crown:\nSilverSky009\:crown:\n111titanic223\nanvae\nAffectings\nAnnaby\nAurrem\nChrisYFS\nendersama\nFTZero3o\nKuroSmh\nBoysLikeYou\nPignite\nTheMLGDucky\nTzipporah\nvaliare\nxLeaqh\nInevoked\nCiaara\nDeadpurple75"
+    description: "Rank 7\n\nohjustame\:crown:\nSilverSky009\:crown:\:bow_and_arrow:\n111titanic223\nanvae\nAffectings\nAnnaby\nAurrem\nChrisYFS\:eight_spoked_asterisk:️\nendersama\nFTZero3o\nKuroSmh\nBoysLikeYou\nPignite\nTheMLGDucky\nTzipporah\nvaliare\nxLeaqh\nInevoked\nCiaara\nDeadpurple75"
     }});
   } else
     if (args == 'artemis') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
-    description: "Rank 5\n\nmililu\:crown:\nSnakeHenry\:crown:\nEchanz\nFarzine\nguccitaee\nJqshZ3\nTELETUBBYJUSTIN\nkwehwy\nskkketchy\ndereknishimoto\npluv\nReachMafia\nskei\nSwipy\n_4H\n_Cath\n_Livyy_"
+    description: "Rank 5\n\nmililu\:crown:\nSnakeHenry\:crown:\:scales:️\nEchanz\nFarzine\nguccitaee\nJqshZ3\nTELETUBBYJUSTIN\nkwehwy\nskkketchy\ndereknishimoto\npluv\nReachMafia\nskei\nSwipy\n_4H\n_Cath\n_Livyy_"
     }});
   } else
     if (args == 'bloodquill') {
@@ -31,14 +31,14 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Echo",
-    description: "Rank 1\n\naayanna\:crown:\nycnan\:crown:\nAbeDaBae\napiculture\nArylia\nElami\nevd\nhri\ninsertsoul\nLoonii\nqGods\nRqvine\nRzco\nultrako\nxShqde_\ngraacie"
+    description: "Rank 1\n\naayanna\:crown:\nycnan\:crown:\:scales:️\nAbeDaBae\:eight_spoked_asterisk:️\napiculture\nArylia\nElami\nevd\nhri\ninsertsoul\nLoonii\nqGods\nRqvine\nRzco\nultrako\nxShqde_\ngraacie"
     }});
   } else   
     if (args == 'fbb') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for The Fresh Beat Band (FBB)",
-    description: "Rank 9\n\ncutecarry\:crown:\nReixnaaaa\:crown:\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\nSmokeArrow\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
+    description: "Rank 9\n\ncutecarry\:crown:\:eight_spoked_asterisk:️\nReixnaaaa\:crown:\nausbrooks\nbeuy\nImExtra\nkillerkeem\nLizard__\nSmokeArrow\notny\nUHCer\nWenesday\nwp5jdlw77dkflqks\nxEugeo\n_FBI_\nImDqnnie_\nDefinitelyLili\nhxii"
     }});
   } else
     if (args == 'idk') {
@@ -59,21 +59,21 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for MCTHICC",
-    description: "Rank 10\n\nsuperbadchad\:crown:\neDying\:crown:\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic\nMickeree_"
+    description: "Rank 10\n\nsuperbadchad\:crown:\:video_camera:\neDying\:crown:\:eight_spoked_asterisk:️\nAbqve\nBlack8787\nGcddess\neboyless\nHolyyyy\nKirstopher\nCrimsonHart\nr3i\nRoodleNoodle\nRubyZeus\nShiroSmh\nYuchithicc\nSZA\nMintNChip\nWhiteCrocs\n_Xq\nScnic\nMickeree_"
     }});
   } else
     if (args == 'nightmare') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Nightmare",
-    description: "Rank 13\n\nSmokeArrow\:crown:\n9oneone\:crown:\nafLO\nDarkLunite\nDunkelZwerg\nBowMC\nluvTAKUMI\nMilzay\nMuMu1228\nO__w__O\nruva\ndtberg\nTwiiks\nVibrants\nWrapz\nxBorder\n_Wrathful_\n__Solid"
+    description: "Rank 13\n\nSmokeArrow\:crown:\:eight_spoked_asterisk:️\n9oneone\:crown:\nafLO\nDarkLunite\nDunkelZwerg\nBowMC\nluvTAKUMI\nMilzay\nMuMu1228\nO__w__O\nruva\ndtberg\nTwiiks\nVibrants\nWrapz\nxBorder\n_Wrathful_\n__Solid"
     }});
   } else
     if (args == 'op') {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for OP",
-    description: "Rank 6\n\nDwagin\:crown:\nMelvinBee\:crown:\naKevin\nBquaan\nqwueen\ndqnielle\nestrallla\niCharmanderZ3\nInfiniteily\njorrt\nJvavi\nMrKitty_Cat\nSadJo\nMapleShade_\nvqt\nZurina\nScoobyDooGey\nElanei"
+    description: "Rank 6\n\nDwagin\:crown:\nMelvinBee\:crown:\naKevin\nBquaan\nqwueen\ndqnielle\nestrallla\niCharmanderZ3\nInfiniteily\njorrt\nJvavi\nMrKitty_Cat\:bulb:\nSadJo\nMapleShade_\nvqt\:scales:️\nZurina\nScoobyDooGey\nElanei"
     }});
   } else
     if (args == 'plutonians') {
@@ -87,7 +87,7 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Velocity",
-    description: "Rank 4\n\nIlyasey\:crown:\nBavna\:crown:\nAri_Eclipse\nbwear\nAstrophysicist15\nBvdie\nOofcustom\nisoar38\nits_rqse\nJesuuus\nkikidakiwi\nFornScarves\nthoester\nZCOD\n_xEmily\nYuchiFlipFlops\nAnxietyprime\nvParz\nMusicel\nArrayal"
+    description: "Rank 4\n\nIlyasey\:crown:\:eight_spoked_asterisk:️\nBavna\:crown:\nAri_Eclipse\nbwear\nAstrophysicist15\nBvdie\nOofcustom\nisoar38\nits_rqse\nJesuuus\:eight_spoked_asterisk:️\nkikidakiwi\nFornScarves\nthoester\nZCOD\n_xEmily\nYuchiFlipFlops\nAnxietyprime\nvParz\nMusicel\nArrayal"
     }});
   }
 }
