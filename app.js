@@ -32,7 +32,7 @@ client.on('message', (message) => {
   // Exit and stop if the prefix is not there or if user is a bot
   if (message.author.bot) return;
   if (message.channel.type === "dm") return; // Ignore DM channels.
-  if(message.content.indexOf(config.prefix) !== 0) return;
+  if(message.content.indexOf(prefix) !== 0) return;
     
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
