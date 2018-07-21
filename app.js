@@ -22,12 +22,19 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.on('message', (message) => {
+  const prefixes = ['fel', 'Fel', 'FEL'];
+  let prefix = false;
+  for(const thisPrefix of prefixes) {
+    if(message.content.startsWith(thisPrefix)) prefix = thisPrefix;
+  }
+  if(!prefix) return;
+    
   // Exit and stop if the prefix is not there or if user is a bot
   if (message.author.bot) return;
   if (message.channel.type === "dm") return; // Ignore DM channels.
   if(message.content.indexOf(config.prefix) !== 0) return;
     
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   // The list of if/else is replaced with those simple 2 lines:
