@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
-    description: "Rank 7\n\nohjustame\nSilverSky009\n111titanic223\nanvae\nAffectings\nAnnaby\nAurrem\nChrisYFS\nendersama\nFTZero3o\nKuroSmh\nBoysLikeYou\nPignite\nTheMLGDucky\nTzipporah\nvaliare\nxLeaqh\nInevoked\nCiaara\nDeadpurple75"
+    description: "Rank 7\n\nohjustame\:crown:\nSilverSky009\:crown:\n111titanic223\nanvae\nAffectings\nAnnaby\nAurrem\nChrisYFS\nendersama\nFTZero3o\nKuroSmh\nBoysLikeYou\nPignite\nTheMLGDucky\nTzipporah\nvaliare\nxLeaqh\nInevoked\nCiaara\nDeadpurple75"
     }});
   } else
     if (args == 'artemis') {
