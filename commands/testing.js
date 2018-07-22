@@ -5,9 +5,18 @@ exports.run = (client, message, args) => {
     var artemisroster = ["mililu", "SnakeHenry", "Echanz"];
     
     if (args == 'aero') {
-    message.channel.send("${aeroroster[0]}, ${aeroroster[1]}, ${aeroroster[2]}");
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for Aero",
+    description: "Rank 7\n\n${aeroroster[0]}\n${aeroroster[1]}\n${aeroroster[2]}"
+    }});
   } else
     if (args == 'artemis') {
-    message.channel.send("${artemisroster[0]}, ${artemisroster[1]}, ${artemisroster[2]}");
-  } 
+    message.channel.send({embed: {
+    color: 12887295,
+    title: "Roster for Artemis",
+    description: "Rank 5\n\n${artemisroster[0]}\n${artemisroster[1]}\n${artemisroster[2]}"
+    }});
+  } default;
+    message.channel.send("Please insert a team name.");
 }
