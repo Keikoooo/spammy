@@ -1,20 +1,21 @@
 exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
+    var aeroroster = ["ohjustame", "SilverSky009", "111titanic223"];
+    var artemisroster = ["mililu", "SnakeHenry", "Echanz"];
+    
     if (args == 'aero') {
-    const aeroroster = "ohjustame";
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
-    description: "Rank 7\n\n${aeroroster}"
+    description: "${aeroroster[0]}, ${aeroroster[1]}, ${aeroroster[2]}"
     }});
   } else
     if (args == 'artemis') {
-    const artemisroster = "mililu";
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
-    description: "Rank 5\n\n${artemisroster}"
+    description: "${artemisroster[0]}, ${artemisroster[1]}, ${artemisroster[2]}"
     }});
   } 
 }
