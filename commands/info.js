@@ -7,5 +7,5 @@ exports.run = (client, message, args) => {
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt);
 
-    return message.channel.send(botembed);
+    message.channel.send(botembed);
 }
