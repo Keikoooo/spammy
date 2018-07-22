@@ -34,7 +34,7 @@ client.on('message', (message) => {
   if (message.channel.type === "dm") return; // Ignore DM channels.
   if(message.content.indexOf(prefix) !== 0) return;
     
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(prefix.length).trim().split(/ +/g).toLowerCase();
   const command = args.shift().toLowerCase();
     
   // The list of if/else is replaced with those simple 2 lines:
