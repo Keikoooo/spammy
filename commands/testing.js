@@ -17,6 +17,5 @@ exports.run = (client, message, args) => {
     title: "Roster for Artemis",
     description: "Rank 5\n\n${artemisroster[0]}\n${artemisroster[1]}\n${artemisroster[2]}"
     }});
-  } default;
-    message.channel.send("Please insert a team name.");
+  }
 }
