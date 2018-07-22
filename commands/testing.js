@@ -1,10 +1,8 @@
 exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
-    var aeroroster = "ohjustame";
-    var artemisroster = "mililu";
-    
     if (args == 'aero') {
+    const aeroroster = "ohjustame";
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Aero",
@@ -12,6 +10,7 @@ exports.run = (client, message, args) => {
     }});
   } else
     if (args == 'artemis') {
+    const artemisroster = "mililu";
     message.channel.send({embed: {
     color: 12887295,
     title: "Roster for Artemis",
