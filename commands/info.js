@@ -1,7 +1,8 @@
 exports.run = (client, message, args) => {
     let bicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
+    
+    .setTitle("Bot Information")
     .setColor("#15f153")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
