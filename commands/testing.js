@@ -1,8 +1,8 @@
 exports.run = (client, message, args) => {
     let [add, remove, player, team] = args;
     
-    let ["ohjustame", "SilverSky009"] = aeroroster;
-    let ["mililu", "SnakeHenry"] = artemisroster;
+    const ["ohjustame", "SilverSky009"] = aeroroster;
+    const ["mililu", "SnakeHenry"] = artemisroster;
     
     if (args == 'aero') {
     message.channel.send({embed: {
