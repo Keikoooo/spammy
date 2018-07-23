@@ -3,6 +3,13 @@ const request = require('request');
 const client = new Discord.Client();
 const fs = require("fs")
 
+// For the level and point system
+const Enmap = require("enmap");
+const EnmapLevel = require("enmap-level");
+
+const pointProvider = new EnmapLevel({name: "points"});
+this.points = new Enmap({provider: pointProvider});
+
 // const config = require("./config.json");
 
 client.on('ready', () => {
