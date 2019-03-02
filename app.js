@@ -7,7 +7,7 @@ const fs = require("fs")
 
 client.on('ready', () => {
     console.log(`I am ready!`);
-    client.user.setPresence({ game: { name: `on ${client.guilds.size} servers | Keiko`, type: 0 } });
+    client.user.setPresence({ game: { name: `on ${client.guilds.size} servers | Keiko`, type: 1 } });
 });
 
 // This loop reads the /events/ folder and attaches each event file to the appropriate event.
