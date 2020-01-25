@@ -8,10 +8,11 @@ const prefix = ";";
 // const config = require("./config.json");
 
 client.on('ready', () => {
+    var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
+    
     console.log(`I am ready!`);
     client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
     
-    var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
     	setInterval(() => {
     		textChannel.send(SpamMessage)}, 10000);
     };
