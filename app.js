@@ -13,11 +13,11 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-	if(message.author.bot) return;
-	if(!command.startsWith(prefix)) return;
+    if(message.author.bot) return;
+    if(!command.startsWith(prefix)) return;
+
     if(command === `${prefix}spam`) {
-    	if(!message.author.user) return;
-    	let Ping = message.mentions.users.first();
+	let Ping = message.mentions.users.first();
     	setInterval(function(){
     		Ping.send(SpamMessage)
     	},
