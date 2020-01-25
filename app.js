@@ -11,7 +11,7 @@ client.on('ready', () => {
     var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
     
     console.log(`I am ready!`);
-    client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
+    client.user.setPresence({ game: { name: `in your mom's house`, type: 0 } });
     
     setInterval(() => {
     testChannel.send(SpamMessage);}, 5000);
