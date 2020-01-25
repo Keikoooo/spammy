@@ -18,7 +18,7 @@ client.on("message", async message => {
 
     if(command === `${prefix}spam`) {
     	setInterval(function(){
-    		client.send(SpamMessage)
+    		message.channel.send(SpamMessage)
     	},
     		1200
     	);
