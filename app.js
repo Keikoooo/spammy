@@ -3,7 +3,6 @@ const request = require('request');
 const client = new Discord.Client();
 const fs = require("fs")
 const SpamMessage = "Bacon and eggs make a good breakfast, everyone."; // message you want to spam \\
-const YourDiscordID = 189544885072822272; // Replace 0 with your discord id! \\
 const prefix = ";";
 
 // const config = require("./config.json");
@@ -17,7 +16,7 @@ client.on('message', (message) => {
 	if(message.author.bot) return;
 	if(!command.startsWith(prefix)) return;
     if(command === `${prefix}spam`) {
-    	if(!message.author.id === YourDiscordID) return;
+    	if(!message.author.user) return;
     	let Ping = message.mentions.users.first();
     	setInterval(function(){
     		Ping.send(SpamMessage)
