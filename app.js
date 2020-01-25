@@ -10,16 +10,14 @@ const prefix = ";";
 client.on('ready', () => {
     console.log(`I am ready!`);
     client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
-});
-
-client.on("message", async message => {
-    if(message.author.bot) return;
-    if(!command.startsWith(prefix)) return;
-
-    if(command === `${prefix}spam`) {
+    
+    var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
     	setInterval(() => {
     		textChannel.send(SpamMessage)}, 10000);
     };
+});
+
+client.on("message", async message => {
 });
 
 // THIS  MUST  BE  THIS  WAY
