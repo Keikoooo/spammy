@@ -13,12 +13,15 @@ client.on('ready', () => {
     console.log(`I am ready!`);
     client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
     
-    	setInterval(() => {
-    		textChannel.send(SpamMessage)}, 10000);
-    };
+    setInterval(() => {
+    testChannel.send(SpamMessage);}, 10000);
 });
 
 client.on("message", async message => {
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return; // Ignore DM channels.
+  if(message.content.indexOf(prefix) !== 0) return;
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
