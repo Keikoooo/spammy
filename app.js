@@ -17,9 +17,8 @@ client.on("message", async message => {
     if(!command.startsWith(prefix)) return;
 
     if(command === `${prefix}spam`) {
-	let Ping = message.mentions.users.first();
     	setInterval(function(){
-    		Ping.send(SpamMessage)
+    		client.send(SpamMessage)
     	},
     		1200
     	);
