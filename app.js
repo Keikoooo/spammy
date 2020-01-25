@@ -14,7 +14,7 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
     
     setInterval(() => {
-    testChannel.send(SpamMessage);}, 5000);
+    testChannel.send(SpamMessage);}, 2000);
 });
 
 client.on("message", async message => {
