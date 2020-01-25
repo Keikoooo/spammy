@@ -12,7 +12,7 @@ client.on('ready', () => {
     client.user.setPresence({ game: { name: `Pokecord | Keiko`, type: 0 } });
 });
 
-client.on('message', (message) => {
+client.on("message", async message => {
     if(message.author.bot) return;
     if(!command.startsWith(prefix)) return;
 
