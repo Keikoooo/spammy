@@ -17,11 +17,8 @@ client.on("message", async message => {
     if(!command.startsWith(prefix)) return;
 
     if(command === `${prefix}spam`) {
-    	setInterval(function(){
-    		message.channel.send(SpamMessage)
-    	},
-    		1200
-    	);
+    	setInterval(() => {
+    		textChannel.send(SpamMessage)}, 10000);
     };
 });
 
