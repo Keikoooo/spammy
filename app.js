@@ -8,13 +8,13 @@ const prefix = ";";
 // const config = require("./config.json");
 
 client.on('ready', () => {
-    var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
+    // var testChannel = client.channels.find(channel => channel.id ==='669405037155450891');
     
     console.log(`I am ready!`);
     client.user.setPresence({ game: { name: `at your mom's house`, type: 0 } });
     
-    setInterval(() => {
-    testChannel.send(SpamMessage);}, 5000);
+    // setInterval(() => {
+    // testChannel.send(SpamMessage);}, 5000);
 });
 
 client.on("message", async message => {
